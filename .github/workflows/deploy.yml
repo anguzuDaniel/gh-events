@@ -6,9 +6,8 @@ on:
       - dev
 env:
   MONGODB_CLUSTER_ADDRESS: cluster0.p9ub2.mongodb.net
-  MONGODB_DB_NAME: git-actions
-  MONGODB_USERNAME: anguzud7
-  MONGODB_PASSWORD: LZdDSu2pCGk9bhlL
+  MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+  MONGODB_PASSWORD: ${{ secrest.MONGODB_PASSWORD }}
   PORT: 8080
 jobs:
   test:
